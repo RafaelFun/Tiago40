@@ -1,16 +1,58 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f4ef;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+    height: 100vh;
+    background: url("./Imagens/FundoDescricao.png") no-repeat center center fixed;
+    background-size: cover; /* garante que a imagem cubra toda a tela */
+    align-items: center;
 }
+.cabecalho {
+    text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #000000a2;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: white;
+    max-width: 800px; /* limita a largura do bloco */
+}
+
+.cabecalho p {
+    text-align: center;
+    max-width: 800px; /* limita a largura do texto */
+    margin: 0 auto; /* centraliza o texto */
+    font-size: 18px; /* aumenta o tamanho da fonte */
+    line-height: 1.6; /* melhora a legibilidade */
+}  
+
+.SobreRio {
+    text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #000000a2;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: white;
+    max-width: 800px; /* limita a largura do bloco */
+}
+
+.SobreRio p {
+    text-align: center;
+    max-width: 800px; /* limita a largura do texto */
+    margin: 0 auto; /* centraliza o texto */
+    font-size: 18px; /* aumenta o tamanho da fonte */
+    line-height: 1.6; /* melhora a legibilidade */
+}  
 /* Container das 3 divs */
 .menu-container {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 50px;
+    background-color: rgba(255, 228, 196, 0.808);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Cada item */

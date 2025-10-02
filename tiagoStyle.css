@@ -93,4 +93,9 @@ body {
     margin-block: 20px;
 }
 
-
+.logo {
+    max-height: 60px; /* ajusta a altura máxima da logo */
+    max-width: 60px; /* define o tamanho menor da logo */
+    align-self: flex-end;
+    opacity: 0.9; /* opcional, deixa mais suave */
+}
