@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("./images/fotoSITEPRINCIPAL.png") no-repeat center center fixed;
+    background: url("./Images/fotoSITEPRINCIPAL.png") no-repeat center center fixed;
     background-size: cover; /* garante que a imagem cubra toda a tela */
     color: hsl(0, 36%, 96%);
 }
@@ -92,4 +92,5 @@ body {
     margin-bottom: 20px;
     margin-block: 20px;
 }
+
 
