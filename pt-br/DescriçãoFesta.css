@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f4ef;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+/* Container das 3 divs */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Cada item */
+.menu-item {
+    position: relative;
+    width: 220px;
+}
+
+/* Barra com o título */
+.menu-title {
+    background-color: #877961; /* mesmo marrom dos botões */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover da barra */
+.menu-title:hover {
+    background-color: #6e604d;
+}
+
+/* Janelinha escondida */
+.menu-info {
+    position: absolute;
+    top: 100%; /* aparece logo abaixo da barra */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Texto da janelinha */
+.menu-info p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Botão da janelinha */
+.menu-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #877961;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.menu-btn:hover {
+    background-color: #6e604d;
+}
+
+/* Mostrar janelinha quando passar o mouse */
+.menu-item:hover .menu-info {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
